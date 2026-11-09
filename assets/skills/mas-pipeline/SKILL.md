@@ -55,7 +55,7 @@ Guarde `card`, `acceptance-criteria` e `files-to-touch` do retorno.
 
 ## Gate — Aprovação do card
 Mostre o card ao usuário (completo, com campos `[PREENCHER]` destacados) e pergunte:
-> "Card pronto em `.unac/{item-id}/{item-id}_card.md`. Posso implementar ou quer ajustar?"
+> "Card pronto em `.mas/{item-id}/{item-id}_card.md`. Posso implementar ou quer ajustar?"
 
 Ajustes → re-dispatch do refiner com `feedback`. Aprovado → Fase 2.
 Releia o card do arquivo após aprovação (o usuário pode ter editado) e use essa versão nos prompts seguintes.
@@ -70,7 +70,7 @@ Agent(
     mode: implement
     Card completo:
     <<<
-    {conteúdo de .unac/{item-id}/{item-id}_card.md}
+    {conteúdo de .mas/{item-id}/{item-id}_card.md}
     >>>
     Critérios de aceitação:
     {lista numerada}
@@ -107,7 +107,7 @@ Agent(
 ## Fase 5 — Fechamento
 - Rode `git diff --cached --stat` e mostre ao usuário.
 - Resumo: card, arquivos em stage, testes, iterações, sugestões 🟡 não aplicadas.
-- Artefatos: `.unac/{item-id}/{item-id}_card.md` e `.unac/{item-id}/{item-id}_qa_report.md`.
+- Artefatos: `.mas/{item-id}/{item-id}_card.md` e `.mas/{item-id}/{item-id}_qa_report.md`.
 - Sugira o próximo passo (`/commits`, PR) — sem executar.
 
 ## Red flags

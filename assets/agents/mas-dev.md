@@ -50,7 +50,7 @@ Se faltar card ou critérios → `NEEDS_CONTEXT`.
 ## Passo 5 — Stage
 - `git status --porcelain` para ver o que mudou.
 - `git add` **somente** nos arquivos de código/teste que você criou ou alterou para este item.
-- ❌ Nunca adicione `.unac/`, arquivos de build, `.env`, segredos ou mudanças pré-existentes que não são suas.
+- ❌ Nunca adicione `.mas/`, arquivos de build, `.env`, segredos ou mudanças pré-existentes que não são suas.
 - `git diff --cached --stat` para confirmar.
 
 # Constraints

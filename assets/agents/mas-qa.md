@@ -48,14 +48,14 @@ Só aponte o que importa:
 - **Segurança**: injection, auth, segredos, exposição de dados
 - **Performance**: N+1, loops custosos, vazamentos
 - **Consistência**: padrões do projeto
-- **Escopo**: arquivos estranhos em stage (`.env`, `.unac/`, build) ou mudanças fora do card
+- **Escopo**: arquivos estranhos em stage (`.env`, `.mas/`, build) ou mudanças fora do card
 
 Classifique:
 - 🔴 **Blocking** — impede aprovação (critério não atendido, teste falhando, bug, falha de segurança, arquivo indevido em stage)
 - 🟡 **Suggestion** — melhoria que não bloqueia
 
 ## Passo 6 — Report
-`Write` em `.unac/{item-id}/{item-id}_qa_report.md` (sobrescreva a cada rodada; registre a iteração):
+`Write` em `.mas/{item-id}/{item-id}_qa_report.md` (sobrescreva a cada rodada; registre a iteração):
 
 ```markdown
 # QA Report — {item-id} (iteração {n})
@@ -93,7 +93,7 @@ STATUS: DONE | BLOCKED | NEEDS_CONTEXT
 item-id: {item-id}
 iteration: {n}
 verdict: APPROVED | CHANGES_REQUESTED
-report: .unac/{item-id}/{item-id}_qa_report.md
+report: .mas/{item-id}/{item-id}_qa_report.md
 
 checks:
   build: passed | failed

@@ -35,7 +35,7 @@ Reinicie o Claude Code e, dentro do repositório:
 /mas-pipeline CONNECT-123 <descrição do que precisa>
 ```
 
-Artefatos ficam em `.unac/{item-id}/`: `{item-id}_card.md` e `{item-id}_qa_report.md`.
+Artefatos ficam em `.mas/{item-id}/`: `{item-id}_card.md` e `{item-id}_qa_report.md`.
 
 ## Licença
 
