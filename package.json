@@ -1,0 +1,38 @@
+{
+  "name": "mas-pipeline",
+  "version": "1.0.0",
+  "description": "Pipeline leve para Claude Code: 3 agents (refiner, dev, qa) que levam um item do card Jira até código revisado em git stage",
+  "type": "module",
+  "bin": {
+    "mas-pipeline": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "assets",
+    "README.md"
+  ],
+  "scripts": {
+    "sync": "node scripts/sync.js",
+    "prepublishOnly": "node scripts/sync.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "agents",
+    "skills",
+    "jira",
+    "pipeline"
+  ],
+  "license": "MIT",
+  "author": "Marco Santos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoantn020/agente-mas.git"
+  },
+  "homepage": "https://github.com/marcoantn020/agente-mas#readme",
+  "bugs": {
+    "url": "https://github.com/marcoantn020/agente-mas/issues"
+  }
+}
